@@ -31,12 +31,12 @@ steps:
     scannerMode: 'CLI'
     configMode: 'file'
 
-- task: XamarinAndroid@1
-  displayName: 'Build Xamarin.Android project'
-  inputs:
-    projectFile: '**/*Droid*.csproj'
-    outputDirectory: '$(build.binariesdirectory)/$(BuildConfiguration)'
-    configuration: '$(BuildConfiguration)'
+# - task: XamarinAndroid@1
+#   displayName: 'Build Xamarin.Android project'
+#   inputs:
+#     projectFile: '**/*Droid*.csproj'
+#     outputDirectory: '$(build.binariesdirectory)/$(BuildConfiguration)'
+#     configuration: '$(BuildConfiguration)'
 
 - task: MSBuild@1
   displayName: 'Build UnitTests'
